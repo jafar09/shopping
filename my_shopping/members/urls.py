@@ -2,7 +2,7 @@ from django.urls import path
 from .import views
 
 urlpatterns =[
-    path('members/', views.members, name='members'),
-    path('', views.home, name='home-v3.html'),  # Asosiy sahifa
+    path('', views.members, name='members'),
+    path('about', views.members1, name='home-v2.html'),  # Asosiy sahifa
 
 ]
