@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.template import loader
 from django.shortcuts import render 
+def main(request):
+  return render(request, "main.html")
 
 def members(request):
   return render(request,"404.html")
@@ -37,9 +39,6 @@ def homev6(request):
 
 def homev7(request):
   return render(request,"home-v7.html")
-
-def index(request):
-  return render(request,"index.html")
 
 def storedirectory(request):
   return render(request,"store-directory.html")
