@@ -33248,7 +33248,7 @@ blockquote:not(.blockquote) p {
   text-transform: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+  -font-smoothing: antialiased;
   font-size: 1.00012rem;
   color: #b0b5b9;
   margin-top: 0.25025rem;

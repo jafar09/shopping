@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-gstx($fbck^5814y4s(^12t_bt^a3ioe8n-frmf5-pn)(v&6b9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -118,9 +118,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS =[
-os.path.join(BASE_DIR, 'media')]
-
+STATICFILES_DIRS =[os.path.join(BASE_DIR, 'static')]
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 # Default primary key field type
