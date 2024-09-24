@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.template import loader
 from django.shortcuts import render 
+from store.models import Product
 def main(request):
   return render(request, "main.html")
 
@@ -20,7 +21,12 @@ def faq(request):
   return render(request,"faq.html")
 
 def homev2(request):
-  return render(request,"home-v2.html")
+  products = Product.objects.filter(is_available=True)
+  context = {
+    'products': products
+  }
+  return render(request,"home-v2.html" , context)
+
 
 def homev3fullcolorbg(request):
   return render(request,"home-v3-full-color-bg.html")
